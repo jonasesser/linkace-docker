@@ -31,9 +31,6 @@ services:
   nginx:
     image: docker.io/bitnami/nginx:1.24
     restart: unless-stopped
-    ports:
-      - "0.0.0.0:80:8080"
-      #- "0.0.0.0:443:8443"
     depends_on:
       - app
     volumes:
